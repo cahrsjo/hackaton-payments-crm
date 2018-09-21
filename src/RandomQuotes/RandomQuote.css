@@ -21,3 +21,13 @@
   font-size: 31px;
   font-weight: 700;
 }
+
+.quoteText {
+  font-weight: 700;
+  font-family: 'OCR A Std', monospace;
+}
+
+.quoteBy {
+  color: grey;
+  font-style: italic;
+}

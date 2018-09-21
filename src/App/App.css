@@ -35,6 +35,7 @@
 
 .App-bears:hover {
   animation: App-bears-scale infinite 1s linear;
+  animation-iteration-count: 1;
   height: 100px;
 }
 

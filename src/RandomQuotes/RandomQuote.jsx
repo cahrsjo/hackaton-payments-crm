@@ -30,8 +30,8 @@ class RandomQuote extends Component {
           Generate quote
         </button>
         <React.Fragment>
-          <p>{quoteToShow.quote}</p>
-          <p style={{ color: 'grey' }}>{quoteToShow.by}</p>
+          <p className="quoteText">{quoteToShow.quote}</p>
+          <p className="quoteBy">{quoteToShow.by}</p>
         </React.Fragment>
 
         {quoteToShow.by === 'Kung Uggla' && (
