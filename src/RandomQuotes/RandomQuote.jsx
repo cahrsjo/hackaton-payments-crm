@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import uggla from '../uggla.jpg';
-
+import './RandomQuote.css';
 class RandomQuote extends Component {
   constructor(props) {
     super(props);
@@ -18,6 +18,7 @@ class RandomQuote extends Component {
 
     return (
       <div className="quote">
+        <h2 style={{ margin: '10px 0' }}>QUOTES! (ง^ᗜ^)ง</h2>
         <button
           className="generateQuote"
           onClick={() => {

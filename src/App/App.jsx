@@ -17,9 +17,9 @@ class App extends Component {
         <div className="content">
           <p className="App-intro" />
           <RandomQuote quotes={Quotes} />
-          <div style={{ margin: '200px 0' }} />
+          {/* <div style={{ margin: '200px 0' }} /> */}
           <RadioButtons />
-          <div style={{ margin: '200px 0' }} />
+          {/* <div style={{ margin: '200px 0' }} /> */}
         </div>
       </div>
     );
