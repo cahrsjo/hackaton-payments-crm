@@ -9,6 +9,11 @@
   height: 100px;
 }
 
+.App-logo:hover {
+  animation: App-logo-spin infinite 0.1s linear;
+  height: 100px;
+}
+
 .App-header {
   display: flex;
   justify-content: space-between;
@@ -28,11 +33,25 @@
   font-size: large;
 }
 
+.App-bears:hover {
+  animation: App-bears-scale infinite 1s linear;
+  height: 100px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes App-bears-scale {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(10);
   }
 }

@@ -12,7 +12,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Hackaton for Payments and CRM</h1>
-          <h2 className="App-title">ʕ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ</h2>
+          <h2 className="App-bears">ʕ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ</h2>
         </header>
         <div className="content">
           <p className="App-intro" />
