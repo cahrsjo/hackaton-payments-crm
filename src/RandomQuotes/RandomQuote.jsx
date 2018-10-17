@@ -14,7 +14,7 @@ class RandomQuote extends Component {
 
   render() {
     const { quotes } = this.props;
-    const { quoteToShow, gifUrl } = this.state;
+    const { quoteToShow } = this.state;
 
     return (
       <div className="quote">
