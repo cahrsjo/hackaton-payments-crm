@@ -12,25 +12,6 @@ class RandomQuote extends Component {
     this.setState({ quoteToShow: this.props.quotes.quotes[random] });
   };
 
-  generateGif = async () => {
-    const response = await fetch('https://www.reddit.com/r/reactiongifs.json');
-    const json = await response.json();
-
-    const index = Math.floor(Math.random() * 25);
-
-    console.log('# rand ', index);
-    console.log('# length ', json.data.children.length, json.data.children);
-
-    let url = json.data.children[index].data.url;
-    if (url.indexOf('.gifv') > -1) {
-      url = json.data.children[0].data.url;
-    }
-
-    this.setState({
-      gifUrl: url,
-    });
-  };
-
   render() {
     const { quotes } = this.props;
     const { quoteToShow, gifUrl } = this.state;
@@ -48,17 +29,6 @@ class RandomQuote extends Component {
         >
           Generate quote
         </button>
-
-        <button
-          className="generateQuote"
-          onClick={() => {
-            this.generateGif();
-          }}
-        >
-          CLICK FOR GIF
-        </button>
-
-        {gifUrl && <img style={{ height: '200px' }} src={gifUrl} alt="WOOPS" />}
 
         <React.Fragment>
           <p className="quoteText">{quoteToShow.quote}</p>
