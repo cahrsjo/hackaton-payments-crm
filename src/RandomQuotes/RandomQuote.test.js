@@ -1,5 +1,5 @@
 import React from 'react';
-import RandomQuote from '../RandomQuotes/RandomQuote';
+import RandomQuote from './RandomQuote';
 import { shallow, mount, render } from 'enzyme';
 
 describe('<RandomQuote />', () => {
